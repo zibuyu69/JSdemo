@@ -1,11 +1,6 @@
-function start(){
-  document.getElementById("button").addEventListener("click",()=>{
-    let old=document.getElementById("div");
-    let old1=document.getElementById("button")
-    let new=document.createElement("p");
-    document.getElementById("p").innerHTML="1";
-    old.insertBefore(new,old.lastChild)
-  }
-    ,false)
+function start() {
+  document.getElementById("button").addEventListener("click", () => {
+    document.getElementById("div").innerHTML += '<div id="number1" style="width:100px;height:100px;display:inline-block;background:#d3f261"></div>';
+  }, false)
 }
 window.addEventListener("load", start, false);
