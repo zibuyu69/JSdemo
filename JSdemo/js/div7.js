@@ -13,8 +13,13 @@ function start(){
   },false)
   document.getElementById("button1").addEventListener("click",()=>{
       let number=document.getElementById("text").value;
-      console.log(number);
-      
+      let list=document.getElementsByTagName("div");
+      for(let i=0;i<=number;i++){
+      let arr=list[i].getAttribute("id");
+      console.log(arr);
+
+}
+      console.log(arr);
   },false)
 }
 window.addEventListener("load", start, false);
