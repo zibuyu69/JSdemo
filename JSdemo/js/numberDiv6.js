@@ -7,9 +7,6 @@ console.log(text);
       let style =divx.getAttribute("style");
       console.log(style);
       divx.setAttribute("style","width:100px;height: 100px;background:#610b00")
-
-
-
 }
 function change(){
   let num=document.getElementById("text1").value;
