@@ -16,9 +16,43 @@
         let newnode=document.createElement("i");
         newnode.innerHTML="php";
         oldnode.parentElement.replaceChild(newnode,oldnode)
-
        }
+       function people(name,age){
+  this.name=name;
+         this.age=age;
+         this.getAge=function(){
+           return this.age;
+         }
+         this.getName=function(){
+           return this.name;
+         }
+        this.setName=function(name){
+          this.name=name;
+        }
+       }
+      var man=new people('有趣',26);
+      console.log(man.getName());
+      console.log(man.getAge());
+      man.setName('可乐');
+      console.log(man.getName());
+
+
+
+
+
+
+
+
   </script>
 
+
+
+
+
+
+
+
+
+
  </body>
-</html>s
+</html>

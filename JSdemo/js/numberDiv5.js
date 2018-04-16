@@ -18,11 +18,14 @@ function  start(){
     newbutt.setAttribute("id",i)
     otest.appendChild(newbutt)
 
+    function number(){
+
+        let i=  document.getElementById(i)
+        i.innerHTML=i
+    }
   }
     }, false)
 
 }
-function number(){
-    
-}
+
 window.addEventListener("load", start, false);
