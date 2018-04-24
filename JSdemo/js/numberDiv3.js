@@ -7,5 +7,8 @@ sum ++
 
 
   }, false)
+  document.getElementById("but").addEventListener("click",()=>{
+    alert("oo1");
+  },false)
 }
 window.addEventListener("load", start, false);
