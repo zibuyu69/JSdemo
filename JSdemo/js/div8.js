@@ -8,18 +8,24 @@ function start() {
         let newnode = document.createElement("div");
         newnode.innerHTML = i;
         newnode.setAttribute("id", i);
-        newnode.setAttribute("onclick", change);
         newnode.setAttribute(
           "style",
-          "width:100px;height: 100px;background:#d3f261"
+          "width:100px;height: 100px;background:#ffd591"
         );
         otest.appendChild(newnode);
+
+        newnode.addEventListener('click', function (){
+            if (document.getElementById(i).style.backgroundColor == "rgb(255, 213, 145)") {
+                document.getElementById(i).style.backgroundColor = '#91d5ff';
+			}else {
+                document.getElementById(i).style.backgroundColor = '#ffd591';}
+            }
+          )
+
       }
     },
     false
   );
 }
-function change() {
-  alert("000")
-}
+
 window.addEventListener("load", start, false);
