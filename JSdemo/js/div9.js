@@ -2,12 +2,42 @@ function start() {
   document.getElementById("button").addEventListener(
     "click",
     () => {
-      let text = document.getElementsByName("type");
-      for (let i = 0; i <= text.length; i++) {
-        if (text[i].innerHTML == 0 ) {
-          text[i].innerHTML="模式A"
-        }else if(text[i].innerHTML == 1){
-            text[i].innerHTML="模式B"
+      let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+      let otest = document.getElementById("div");
+      let table = document.createElement("table");
+      table.setAttribute("border", "2");
+      otest.appendChild(table);
+      let list = arr.length;
+      let line = 2;
+      for (let i = 1; i <= line; i++) {
+        if (i == 1) {
+          let tr = document.createElement("tr");
+          tr.innerHTML = "type";
+          for (var j = 0; j <= list; j++) {
+            if(j==0){
+              var td = document.createElement("td");
+              tr.name="type"
+              td.innerHTML = "模式A";
+              tr.setAttribute("name","type")
+              tr.appendChild(td);
+            }else{
+            var td = document.createElement("td");
+            tr.name="type"
+            td.innerHTML = j;
+            tr.setAttribute("name","type")
+            tr.appendChild(td);
+          }
+          }
+          table.appendChild(tr);
+        } else if (i == 2) {
+          let tr = document.createElement("tr");
+          tr.innerHTML = "name";
+          for (var j = 0; j <= list; j++) {
+            var td = document.createElement("td");
+            td.innerHTML = j;
+            tr.appendChild(td);
+          }
+          table.appendChild(tr);
         }
       }
     },
