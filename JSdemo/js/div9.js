@@ -14,19 +14,19 @@ function start() {
           let tr = document.createElement("tr");
           tr.innerHTML = "type";
           for (var j = 0; j <= list; j++) {
-            if(j==0){
+            if (j == 0) {
               var td = document.createElement("td");
-              tr.name="type"
+              tr.name = "type";
               td.innerHTML = "模式A";
-              tr.setAttribute("name","type")
+              tr.setAttribute("name", "type");
               tr.appendChild(td);
-            }else{
-            var td = document.createElement("td");
-            tr.name="type"
-            td.innerHTML = j;
-            tr.setAttribute("name","type")
-            tr.appendChild(td);
-          }
+            } else {
+              var td = document.createElement("td");
+              tr.name = "type";
+              td.innerHTML = j;
+              tr.setAttribute("name", "type");
+              tr.appendChild(td);
+            }
           }
           table.appendChild(tr);
         } else if (i == 2) {
@@ -34,7 +34,13 @@ function start() {
           tr.innerHTML = "name";
           for (var j = 0; j <= list; j++) {
             var td = document.createElement("td");
-            td.innerHTML = j;
+            let old = j.toString();
+            for (let n = 0; n <= j; n++) {
+              let old1 = old + n;
+              console.log(old1);
+              td.innerHTML = old1;
+
+            }
             tr.appendChild(td);
           }
           table.appendChild(tr);
