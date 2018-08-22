@@ -1,18 +1,53 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-	<title>Document</title>
-	
-	<script>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    .tab{
+      display: inline-block;
+    }
+    .button {
+      width: 200px;
+      background: none;
+      border: 1px solid #000000;
+      margin: 0;
+      padding: 0
+    }
+    .context{
+      height: 100px;
+      width: 405px;
+      border: 1px solid #000000;
 
-	</script>
-</head>
-<body>
-	<div class="head">亲，您好！<input type="button" value="登 录" id="login"></div>
-	<div id="login_box">
-		<p>用户登录</p><span id="close"></span>
-    <input type="text" size="25" maxlength="50" value="initial value">
-	</div>
-</body>
-</html>
+    }
+    .photo{
+        float: left;
+    }
+    .hide {
+      display: none;
+    }
+    .active {
+      background: #000000;
+      color: #ffffff;
+    }
+    .text{
+    margin: 0 auto;
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="tab"> <button id="tb1" class="button">tab1<tton> </div> <div class="tab"> <button id="tb2" class="button">tab2<tton></div>
+    </div>
+    <div id="tab1" class="context">
+      Tab1 Context
+    </div>
+    <div id="tab2" class="context hide">
+      <img src="photo/001.jpg" class="photo" height="100" width="100" /><div class="text">001</div>
+      <img src="photo/001.jpg" class="photo" height="100" width="100" /><div class="text">001</div>
+      <img src="photo/001.jpg" class="photo" height="100" width="100" /><div class="text">001</div>
+      <img src="photo/001.jpg" class="photo" height="100" width="100" /><div class="text">001</div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/text.js"></script>
+<ml>
